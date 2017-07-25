@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  connection: local
+
+  vars_files:
+    - config.yml
+
+  pre_tasks:
+    - include: tasks/brewfile.yml
+    - include: tasks/homebrew.yml
+
+  roles:
+    - role: elliotweiser.osx-command-line-tools
+    - role: geerlingguy.homebrew

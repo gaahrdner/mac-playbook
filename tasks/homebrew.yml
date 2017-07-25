@@ -1,0 +1,4 @@
+---
+- homebrew_tap:
+    name: Homebrew/bundle
+    state: present

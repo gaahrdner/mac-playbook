@@ -1,0 +1,6 @@
+---
+- name: Symlink Brewfile to home directory
+  file:
+    src: "{{ playbook_dir }}/files/Brewfile"
+    dest: "{{ lookup('env','HOME') }}/Brewfile"
+    state: link

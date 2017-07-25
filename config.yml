@@ -1,0 +1,5 @@
+---
+homebrew_use_brewfile: true
+homebrew_brewfile_dir: '~'
+homebrew_upgrade_all_packages: yes
+configure_osx: true
