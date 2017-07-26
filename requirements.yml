@@ -1,3 +1,4 @@
 ---
 - name: elliotweiser.osx-command-line-tools
 - name: geerlingguy.homebrew
+- name: geerlingguy.dotfiles

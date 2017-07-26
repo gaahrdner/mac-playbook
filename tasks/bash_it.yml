@@ -1,0 +1,12 @@
+---
+- name: Check out bash-it repo
+  git:
+    repo: https://github.com/Bash-it/bash-it.git
+    dest: ~/.bash_it
+    depth: 1
+  become: no
+
+- name: Install bash-it
+  command: ~/.bash_it/install.sh --silent
+  args:
+    creates: ~/.bash_profile

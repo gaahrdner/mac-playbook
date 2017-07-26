@@ -3,3 +3,11 @@ homebrew_use_brewfile: true
 homebrew_brewfile_dir: '~'
 homebrew_upgrade_all_packages: yes
 configure_osx: true
+dotfiles_repo: "https://github.com/gaahrdner/dotfiles.git"
+dotfiles_repo_local_destination: "~/Code/dotfiles"
+dotfiles_files:
+  - .gemrc
+  - .gitconfig
+  - .gitignore
+  - .osx
+  - .vimrc

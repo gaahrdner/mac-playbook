@@ -5,10 +5,10 @@ Ansible playbook for setting up a Mac
 1. ansible is installed
 
 # todo
-1. install homebrew
-1. sync up dotfiles
-1. `bash-it` installation?
-1. add osx defaults writes
+
+1. execute osx script
+1. add custom bash aliases and what not to installation
+1. ensure `.bashrc` exists and is sourced properly
 
 # usage
 `ansible-playbook main.yml -i inventory -K`
