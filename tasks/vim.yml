@@ -1,0 +1,17 @@
+---
+- name: Check out Vundle repo
+  git:  
+    repo: git@github.com:VundleVim/Vundle.vim.git
+    dest: ~/.vim/bundle/Vundle.vim
+  become: no
+
+- name: Create necessary vim folders
+  file:
+    path: ~/.vim/{{ item }}
+    state: directory
+    mode: 0755
+  with_items:
+    - undo
+    - backups
+    - swap
+  become: no

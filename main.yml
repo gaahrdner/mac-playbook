@@ -15,5 +15,5 @@
     - role: geerlingguy.dotfiles
   
   tasks:
-    - include: tasks/vundle.yml
+    - include: tasks/vim.yml
     - include: tasks/bash_it.yml
